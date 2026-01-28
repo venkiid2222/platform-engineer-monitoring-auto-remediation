@@ -1,0 +1,13 @@
+# Terraform local files
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/lambda.zip
+terraform/.terraform.lock.hcl
+
+# Binaries
+*.exe
+
+# OS
+.DS_Store
+Thumbs.db

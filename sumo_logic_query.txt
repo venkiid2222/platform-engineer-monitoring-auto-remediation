@@ -1,0 +1,6 @@
+_sourceCategory=prod/web
+| json "path", "response_time_ms" as path, rt
+| where path="/api/data" and rt > 3000
+| timeslice 10m
+| count as hits by _timeslice
+| where hits > 5
